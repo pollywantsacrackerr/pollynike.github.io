@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Serif+Pro:ital,wght@0,300;1,300&display=swap');
+
+body {
+    font-family: Source Serif Pro;
+    background-color: #ffffff;
+}
+
+p {
+    color: rgb(50, 50, 50);
+}
+
+.nav-link {
+    color: bisque;
+}
+
+.head-text {
+    margin-top: 1em;
+    text-align: center;
+}
+
+.navbar-nav .nav-link.active {
+    color: aquamarine;
+}
+
+.navbar-brand img {
+    width: 50px;
+}
+
+.navbar-toggler {
+    background-color: aquamarine;
+}
+
+.sidebar {
+    color: rgb(39, 39, 39);
+    background-color: #ffffff;
+}
+
+.sidebar>p {
+    font-size: 20px;
+}
+
+.card {
+    color: rgb(46, 46, 46);
+    border-width: 0.1em;
+    border-color: rgb(228, 228, 228);
+}
+
+
+.card a {
+    color: rgb(50, 50, 50);
+    text-decoration: none;
+}
+
+.slide-text {
+    color: rgb(39, 39, 39);
+    font-size: 2em;
+    margin: auto auto;
+}
+
+.footer-text {
+    color: rgb(39, 39, 39);
+    margin: auto auto;
+}
+
+.carousel-control-next-icon {
+    color: rgb(49, 49, 49);
+}
+
+.btn {
+    background-color: rgb(255, 255, 255);
+    border-color: rgb(0, 0, 0);
+
+}
+
+.btn:hover {
+    background-color: rgb(199, 199, 199);
+    border-color: rgb(161, 160, 160);
+
+}
+
+.media-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.call-anim {
+    animation: myAnim 2s ease 0s infinite normal forwards;
+}
+
+@keyframes myAnim {
+	0%,
+	100% {
+		transform: translateX(0%);
+		transform-origin: 50% 50%;
+	}
+
+	15% {
+		transform: translateX(-30px) rotate(-6deg);
+	}
+
+	30% {
+		transform: translateX(15px) rotate(6deg);
+	}
+
+	45% {
+		transform: translateX(-15px) rotate(-3.6deg);
+	}
+
+	60% {
+		transform: translateX(9px) rotate(2.4deg);
+	}
+
+	75% {
+		transform: translateX(-6px) rotate(-1.2deg);
+	}
+}
+
+@media (max-width: 755px) {
+    .carousel-indicators {
+        display: none;
+    }
+}
